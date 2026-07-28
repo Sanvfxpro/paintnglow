@@ -448,7 +448,7 @@ document.querySelector("#sortProducts").addEventListener("change", event => {
 document.querySelector("#newsletterForm").addEventListener("submit", event => {
   event.preventDefault();
   event.target.reset();
-  showToast("Welcome to the Paint & Glow club ✨");
+  showToast("Welcome to the Paint N'Glow club ✨");
 });
 
 const menuToggle = document.querySelector("#menuToggle");

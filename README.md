@@ -1,4 +1,4 @@
-# Paint & Glow Kids Shop
+# Paint N'Glow Kids Shop
 
 A clean, responsive e-commerce prototype for pre-cast painting kits and drawing books for children under five.
 
