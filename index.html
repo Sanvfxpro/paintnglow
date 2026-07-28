@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Paint & Glow — creative pre-cast painting kits and drawing books for children under 5." />
+  <title>Paint & Glow — Creative Kits for Little Artists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Paint and Glow home">
+        <span class="brand-mark" aria-hidden="true">🎨</span>
+        <span class="brand-copy"><strong>Paint & Glow</strong><small>Little hands. Big imagination.</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="#shop">Shop</a>
+        <a href="#benefits">Why us</a>
+        <a href="#how">How it works</a>
+        <a href="#reviews">Parents love us</a>
+      </nav>
+
+      <button class="cart-button" id="openCart" type="button" aria-label="Open shopping cart">
+        <span aria-hidden="true">🛍️</span>
+        <span class="cart-label">Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Made for curious minds under 5</span>
+          <h1>Paint. Draw. <span>Grow!</span></h1>
+          <p>Screen-free creative play with child-safe pre-cast painting kits and age-friendly drawing books.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#shop">Shop creative kits</a>
+            <button class="button button-secondary" id="playDemo" type="button">See how it works</button>
+          </div>
+          <div class="trust-row" aria-label="Product assurances">
+            <span>✓ Non-toxic colours</span>
+            <span>✓ Easy-clean materials</span>
+            <span>✓ Designed for ages 2–5</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Illustration of a child-friendly fox painting a toy mould">
+          <div class="spark spark-one">✦</div>
+          <div class="spark spark-two">★</div>
+          <div class="spark spark-three">✦</div>
+          <div class="hero-card">
+            <div class="progress-chip"><span>Creative streak</span><strong>7 days ⭐</strong></div>
+            <div class="mascot-scene">
+              <div class="mascot" aria-hidden="true">
+                <div class="fox-ear fox-ear-left"></div>
+                <div class="fox-ear fox-ear-right"></div>
+                <div class="fox-head">
+                  <span class="fox-eye fox-eye-left"></span>
+                  <span class="fox-eye fox-eye-right"></span>
+                  <span class="fox-muzzle"></span>
+                  <span class="fox-nose"></span>
+                </div>
+                <div class="fox-body"></div>
+                <div class="fox-arm"></div>
+              </div>
+              <div class="art-table" aria-hidden="true">
+                <span class="paint-pot paint-pot-one"></span>
+                <span class="paint-pot paint-pot-two"></span>
+                <span class="paint-pot paint-pot-three"></span>
+                <span class="mould-star">★</span>
+              </div>
+            </div>
+            <div class="hero-card-footer">
+              <div><strong>Today’s activity</strong><span>Paint a happy star</span></div>
+              <span class="age-pill">3–5 yrs</span>
+            </div>
+          </div>
+          <div class="floating-card floating-left"><span>🧠</span><div><strong>Builds focus</strong><small>Simple guided play</small></div></div>
+          <div class="floating-card floating-right"><span>🌈</span><div><strong>Mess-friendly</strong><small>Easy clean-up</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Product categories">
+      <div class="container category-grid">
+        <button class="category-card active" type="button" data-filter="all"><span>✨</span><div><strong>All products</strong><small>Explore everything</small></div></button>
+        <button class="category-card" type="button" data-filter="mould"><span>🧸</span><div><strong>Paintable moulds</strong><small>Ready-to-paint fun</small></div></button>
+        <button class="category-card" type="button" data-filter="book"><span>📚</span><div><strong>Drawing books</strong><small>Trace, colour, create</small></div></button>
+        <button class="category-card" type="button" data-filter="bundle"><span>🎁</span><div><strong>Gift bundles</strong><small>More play, better value</small></div></button>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="eyebrow">Shop by imagination</span>
+            <h2>Creative favourites for little artists</h2>
+          </div>
+          <div class="shop-tools">
+            <label class="search-box">
+              <span class="sr-only">Search products</span>
+              <input id="productSearch" type="search" placeholder="Search products" />
+              <span aria-hidden="true">⌕</span>
+            </label>
+            <select id="sortProducts" aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="rating">Top rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="benefits">
+      <div class="container feature-grid">
+        <div class="feature-visual reveal">
+          <div class="feature-panel">
+            <span class="feature-badge">Parent-approved play</span>
+            <div class="feature-illustration" aria-hidden="true">
+              <span class="big-palette">🎨</span>
+              <span class="mini-card card-a">🖍️</span>
+              <span class="mini-card card-b">⭐</span>
+              <span class="mini-card card-c">🦁</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-copy reveal">
+          <span class="eyebrow">More than just an activity</span>
+          <h2>Designed for small hands and growing minds</h2>
+          <p>Each kit encourages calm, independent play while helping children practise early learning skills at their own pace.</p>
+          <div class="benefit-list">
+            <article><span>✋</span><div><h3>Fine motor skills</h3><p>Grip, brush movement and tracing support hand control.</p></div></article>
+            <article><span>🎯</span><div><h3>Focus and confidence</h3><p>Small achievable steps help children feel proud of progress.</p></div></article>
+            <article><span>💡</span><div><h3>Creative expression</h3><p>Open-ended colour choices encourage imagination without pressure.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Simple from start to finish</span>
+          <h2>Three easy steps to creative play</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">1</span><div class="step-icon">🛒</div><h3>Choose a kit</h3><p>Pick a mould, drawing book or ready-made bundle.</p></article>
+          <article class="step-card"><span class="step-number">2</span><div class="step-icon">📦</div><h3>Unbox and create</h3><p>Everything is organised for quick setup and easy clean-up.</p></article>
+          <article class="step-card"><span class="step-number">3</span><div class="step-icon">🌟</div><h3>Celebrate their art</h3><p>Display the finished creation and build confidence through praise.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Loved by families</span>
+          <h2>Happy little artists, happier parents</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card"><div class="stars">★★★★★</div><p>“The mould kit kept my daughter happily engaged, and the clean-up was surprisingly easy.”</p><div class="reviewer"><span>AS</span><div><strong>Ananya S.</strong><small>Parent of a 4-year-old</small></div></div></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>“The tracing book is simple, colourful and not overwhelming. Perfect for short daily practice.”</p><div class="reviewer"><span>RK</span><div><strong>Rahul K.</strong><small>Parent of a 3-year-old</small></div></div></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>“We gifted the safari bundle and it felt premium, thoughtful and age-appropriate.”</p><div class="reviewer"><span>MP</span><div><strong>Meera P.</strong><small>Gift buyer</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section newsletter-section">
+      <div class="container newsletter-card">
+        <div><span class="eyebrow">A little creativity in your inbox</span><h2>Get activity ideas and new product updates</h2><p>One useful email at a time. No noisy promotions.</p></div>
+        <form id="newsletterForm" class="newsletter-form">
+          <label class="sr-only" for="newsletterEmail">Email address</label>
+          <input id="newsletterEmail" type="email" placeholder="Parent’s email address" required />
+          <button class="button button-primary" type="submit">Join the club</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark">🎨</span><span class="brand-copy"><strong>Paint & Glow</strong><small>Little hands. Big imagination.</small></span></a><p>Playful art kits for children under five, made with care for families.</p></div>
+      <div><h3>Shop</h3><a href="#shop" data-footer-filter="mould">Paintable moulds</a><a href="#shop" data-footer-filter="book">Drawing books</a><a href="#shop" data-footer-filter="bundle">Gift bundles</a></div>
+      <div><h3>Help</h3><a href="#">Delivery & returns</a><a href="#">Safety information</a><a href="#">Contact us</a></div>
+      <div><h3>Follow</h3><a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">Pinterest</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Paint & Glow</span><span>Made for joyful, screen-free play.</span></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-overlay" data-close-cart></div>
+    <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header"><div><span class="eyebrow">Your basket</span><h2 id="cartTitle">Ready for creative play?</h2></div><button class="icon-button" type="button" data-close-cart aria-label="Close cart">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><span>🛍️</span><h3>Your cart is empty</h3><p>Add a creative kit to get started.</p><button class="button button-secondary" type="button" data-close-cart>Continue shopping</button></div>
+      <div class="cart-summary" id="cartSummary">
+        <div><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+        <div><span>Delivery</span><strong id="deliveryCost">Free</strong></div>
+        <small>Taxes are included. Delivery is free on orders above ₹799.</small>
+        <button class="button button-primary full" id="checkoutButton" type="button">Proceed to checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-panel product-modal-panel" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <button class="icon-button modal-close" type="button" data-close-modal aria-label="Close product details">×</button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="demoModal" aria-hidden="true">
+    <div class="modal-overlay" data-close-demo></div>
+    <div class="modal-panel demo-panel" role="dialog" aria-modal="true" aria-labelledby="demoTitle">
+      <button class="icon-button modal-close" type="button" data-close-demo aria-label="Close how it works">×</button>
+      <span class="eyebrow">How it works</span>
+      <h2 id="demoTitle">A calm, guided creative routine</h2>
+      <div class="demo-stage">
+        <div class="demo-orbit orbit-one">🎨</div><div class="demo-orbit orbit-two">⭐</div><div class="demo-orbit orbit-three">🖍️</div>
+        <div class="demo-main">🧸<span>Paint, draw and proudly display</span></div>
+      </div>
+      <p>Open the kit, choose colours, let your child create freely, then celebrate the finished artwork together.</p>
+      <button class="button button-primary" type="button" data-close-demo onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">Explore kits</button>
+    </div>
+  </div>
+
+  <div class="checkout" id="checkout" aria-hidden="true">
+    <div class="checkout-shell" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <header class="checkout-header">
+        <a class="brand" href="#" aria-label="Paint and Glow checkout"><span class="brand-mark">🎨</span><span class="brand-copy"><strong>Paint & Glow</strong><small>Secure checkout</small></span></a>
+        <button class="icon-button" id="closeCheckout" type="button" aria-label="Close checkout">×</button>
+      </header>
+      <div class="checkout-content">
+        <section class="checkout-form-wrap">
+          <div class="checkout-progress" aria-label="Checkout progress"><span class="active">1 Details</span><span>2 Payment</span><span>3 Done</span></div>
+          <div id="checkoutStepContent"></div>
+        </section>
+        <aside class="order-summary"><span class="eyebrow">Order summary</span><div id="checkoutItems"></div><div class="summary-lines"><div><span>Subtotal</span><strong id="checkoutSubtotal">₹0</strong></div><div><span>Delivery</span><strong id="checkoutDelivery">Free</strong></div><div class="summary-total"><span>Total</span><strong id="checkoutTotal">₹0</strong></div></div></aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <template id="detailsStepTemplate">
+    <div class="checkout-step">
+      <span class="eyebrow">Step 1 of 3</span>
+      <h1 id="checkoutTitle">Delivery details</h1>
+      <form id="detailsForm" class="checkout-form">
+        <div class="form-grid two"><label>First name<input name="firstName" autocomplete="given-name" required /></label><label>Last name<input name="lastName" autocomplete="family-name" required /></label></div>
+        <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
+        <label>Phone number<input type="tel" name="phone" inputmode="tel" autocomplete="tel" required /></label>
+        <label>Address<input name="address" autocomplete="street-address" required /></label>
+        <div class="form-grid two"><label>City<input name="city" autocomplete="address-level2" required /></label><label>PIN code<input name="pin" inputmode="numeric" pattern="[0-9]{6}" autocomplete="postal-code" required /></label></div>
+        <button class="button button-primary full" type="submit">Continue to payment</button>
+      </form>
+    </div>
+  </template>
+
+  <template id="paymentStepTemplate">
+    <div class="checkout-step">
+      <span class="eyebrow">Step 2 of 3</span>
+      <h1>Payment</h1>
+      <div class="payment-options">
+        <label class="payment-card active"><input type="radio" name="paymentMethod" value="card" checked /><span>💳</span><div><strong>Card / UPI</strong><small>Demo payment — no charge will be made</small></div></label>
+        <label class="payment-card"><input type="radio" name="paymentMethod" value="cod" /><span>📦</span><div><strong>Cash on delivery</strong><small>Pay when your order arrives</small></div></label>
+      </div>
+      <form id="paymentForm" class="checkout-form">
+        <label>Cardholder name<input name="cardName" value="Demo Parent" required /></label>
+        <label>Card number<input name="cardNumber" inputmode="numeric" value="4242 4242 4242 4242" required /></label>
+        <div class="form-grid two"><label>Expiry<input name="expiry" value="12/30" required /></label><label>CVV<input name="cvv" inputmode="numeric" value="123" required /></label></div>
+        <button class="button button-primary full" type="submit">Place order</button>
+        <button class="text-button" id="backToDetails" type="button">← Back to delivery details</button>
+      </form>
+    </div>
+  </template>
+
+  <template id="successStepTemplate">
+    <div class="checkout-step success-step">
+      <div class="success-icon">✓</div>
+      <span class="eyebrow">Order confirmed</span>
+      <h1>Creative fun is on the way!</h1>
+      <p>Your demo order number is <strong id="orderNumber"></strong>. A confirmation would normally be sent by email.</p>
+      <button class="button button-primary" id="finishCheckout" type="button">Back to home</button>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
