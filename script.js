@@ -480,3 +480,8 @@ document.querySelectorAll(".reveal").forEach(element => observer.observe(element
 document.querySelector("#year").textContent = new Date().getFullYear();
 renderProducts();
 renderCart();
+
+// Initialize Lenis for smooth scrolling
+const lenis = new Lenis({
+  autoRaf: true,
+});
