@@ -482,6 +482,11 @@ renderProducts();
 renderCart();
 
 // Initialize Lenis for smooth scrolling
-const lenis = new Lenis({
-  autoRaf: true,
-});
+const lenis = new Lenis();
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
